@@ -1,0 +1,1 @@
+## Hi! It's gonna be my first landing page project 😀
