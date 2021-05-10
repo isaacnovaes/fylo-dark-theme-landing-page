@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AIAA,OAAO,CAAC,oEAAI,CACZ,OAAO,CAAC,6EAAI,CACZ,OAAO,CAAC,sEAAI,CACZ,OAAO,CAAC,+EAAI,CDHZ,AAAA,CAAC,CACD,CAAC,AAAA,QAAQ,CACT,CAAC,AAAA,OAAO,AAAC,CACP,UAAU,CAAE,UAAU,CACtB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,SAAS,CAAE,IAAI,CAChB,AGPD,AAAA,MAAM,AAAA,CACF,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,CAC9B,WAAW,CAAE,MAAM,CACnB,gBAAgB,CLJF,OAAkB,CKKhC,OAAO,CAAE,SAAS,CACrB",
+    "sources": [
+        "../../SCSS/style.scss",
+        "../../SCSS/abstracts/_variables.scss",
+        "../../SCSS/abstracts/_mixins.scss",
+        "../../SCSS/base/_reset.scss",
+        "../../SCSS/base/_fonts.scss",
+        "../../SCSS/layout/_grid.scss",
+        "../../SCSS/layout/_header.scss",
+        "../../SCSS/layout/_footer.scss",
+        "../../SCSS/layout/_forms.scss",
+        "../../SCSS/components/_buttons.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
