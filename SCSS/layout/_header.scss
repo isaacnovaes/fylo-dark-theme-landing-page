@@ -4,4 +4,25 @@ header{
     align-items: center;
     background-color:$dark-blue-intro;
     padding: 30px 20px;    
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 12rem;
+        margin-right: 0.5rem;
+    }
+    img {
+        width: 8rem;
+    }
+
+    a {
+        text-decoration: none;
+        @include font ($raleway, 400px);
+        display: inline-block;
+                
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
 }

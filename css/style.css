@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 *,
 *::before,
 *::after {
@@ -24,5 +22,63 @@ header {
           align-items: center;
   background-color: #1c2431;
   padding: 30px 20px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 12rem;
+      flex-basis: 12rem;
+  margin-right: 0.5rem;
+}
+
+header img {
+  width: 8rem;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400px;
+  color: white;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.block-first-intro {
+  background-color: #1c2431;
+}
+
+.block-first-intro figure, .block-first-intro h1, .block-first-intro h2 {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.block-first-intro img {
+  width: 100%;
+}
+
+.block-first-intro h1, .block-first-intro h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 0.875rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.block-first-intro h2 {
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
