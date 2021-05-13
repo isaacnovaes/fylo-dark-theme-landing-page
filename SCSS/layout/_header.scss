@@ -16,11 +16,8 @@ header{
     }
 
     a {
-        display: inline-block;
-        text-decoration: none;
-        @include font ($raleway, lighter);
+        @include set-button;
         font-size: 0.875rem;
-
         &:hover{
             text-decoration: underline;
         }

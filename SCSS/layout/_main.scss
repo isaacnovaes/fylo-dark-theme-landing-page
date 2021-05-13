@@ -1,5 +1,6 @@
 .block-first-intro {
- background-color: $dark-blue-intro;
+ background: $dark-blue-intro;
+ // url(/images/bg-curvy-mobile.svg) Finish styled background
 
  figure {
   @include width-margin;
@@ -15,10 +16,26 @@
 
  h2 {
   @include set-text-subtitle;  
+  
  }
  a {
-     
+    @include set-button;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 15px 100px;   
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%) );
+    border-radius: 25px;
+    width: fit-content;
+
+    &:hover{
+        background-image:linear-gradient(to right,hsl(176, 68%, 64%));
+    }
  }
  
+}
 
+.block-second-grid-first{
+    display: grid;
+    //Continue here
+    background-color: $dark-blue-main;
 }
