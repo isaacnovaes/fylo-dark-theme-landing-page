@@ -41,12 +41,13 @@ header img {
 }
 
 header a {
+  display: inline-block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: 400px;
+  font-weight: lighter;
   color: white;
   font-size: 0.875rem;
-  display: inline-block;
+  font-size: 0.875rem;
 }
 
 header a:hover {
@@ -57,28 +58,40 @@ header a:hover {
   background-color: #1c2431;
 }
 
-.block-first-intro figure, .block-first-intro h1, .block-first-intro h2 {
-  width: 85%;
+.block-first-intro figure {
+  width: 90%;
+  max-width: 600px;
   margin: 0 auto;
-  max-width: 500px;
 }
 
 .block-first-intro img {
   width: 100%;
 }
 
-.block-first-intro h1, .block-first-intro h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+.block-first-intro h1 {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
   color: white;
   font-size: 0.875rem;
-  font-size: 2rem;
   text-align: center;
+  font-size: 2rem;
 }
 
 .block-first-intro h2 {
-  font-weight: 400;
-  margin-top: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 100;
   font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

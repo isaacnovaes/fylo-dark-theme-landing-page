@@ -2,10 +2,28 @@
   font-family:$font;
   font-weight: $weight;
   color: $white;
-  font-size:0.875rem ;
+  font-size: 0.875rem;  
 }
 
 @mixin width-margin {
-  width: 85%;
+  width: 90%;
+  max-width: 600px;
   margin: 0 auto;
+}
+
+@mixin set-text-title () {
+  @include width-margin; 
+  @include font($open,bolder) ;
+  text-align: center;
+  font-size:2rem;
+}
+
+@mixin set-text-subtitle () {
+  @include width-margin; 
+  @include font($open,bolder);
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+  text-align: center;
 }

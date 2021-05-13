@@ -16,10 +16,11 @@ header{
     }
 
     a {
-        text-decoration: none;
-        @include font ($raleway, 400px);
         display: inline-block;
-                
+        text-decoration: none;
+        @include font ($raleway, lighter);
+        font-size: 0.875rem;
+
         &:hover{
             text-decoration: underline;
         }

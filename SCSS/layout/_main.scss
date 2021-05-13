@@ -3,22 +3,22 @@
 
  figure {
   @include width-margin;
-  max-width: 500px;
  }
+
  img {
   width: 100%;
  }
 
  h1 {
-  @extend figure;
-  @include font($raleway, 700);
-  font-size: 2rem;
-  text-align: center;
+  @include set-text-title;  
  }
+
  h2 {
-  @extend h1;
-  font-weight: 400;
-  margin-top: 20px;
-  font-size: 1.2rem;
+  @include set-text-subtitle;  
  }
+ a {
+     
+ }
+ 
+
 }
