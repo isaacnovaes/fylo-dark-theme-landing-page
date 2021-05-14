@@ -1,1 +1,50 @@
 //nav {flex-basis:make it bigger}
+@media screen and (max-width:420px){
+    header {
+        nav {
+            flex-basis: 40vw;
+            margin-right: -3vw;
+        }
+        img {
+            width: 30%;
+        }
+        a{
+            font-size: 3.5vw;
+        }
+    }  
+    .block-first-intro {
+        a {
+            font-size: 4.5vw;
+            padding: 15px 18vw;
+        }
+        h1 {
+            font-size:6vw;
+        }
+        h2 {
+            font-size:4vw;
+        }
+    }
+    .block-second-grid-first div{
+        h1 {
+            font-size:5vw;
+        }
+        h2 {
+            font-size:4vw;
+        }
+    }
+    
+}
+@media screen and (min-width:992px) {
+    header nav {
+        flex-basis: 12rem;;
+    }
+     header nav a {
+         font-size: 1rem;
+     }
+
+     //intro image
+
+     .block-second-grid-first{
+         grid-template-columns: auto auto;
+     }
+}

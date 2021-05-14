@@ -36,6 +36,33 @@
 
 .block-second-grid-first{
     display: grid;
-    //Continue here
+    justify-content: center;
     background-color: $dark-blue-main;
+
+    div{
+        margin-top: 100px; 
+        overflow: hidden;     
+        
+        img{
+           display: inline-block;
+           width: fit-content;
+           margin: 0 50%;
+           transform: translate(-50%);
+           margin-bottom: 30px;
+         }
+
+        h1{
+            @include set-text-title;
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            @include set-text-subtitle;
+            font-size: 1rem;
+        }
+    }     
+}
+
+.block-second-grid-second {
+    //magic side padding: 20px
 }

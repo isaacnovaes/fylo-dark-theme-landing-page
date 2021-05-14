@@ -24,6 +24,10 @@ header {
   padding: 30px 20px;
 }
 
+header img {
+  width: 8rem;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,23 +35,19 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-preferred-size: 12rem;
-      flex-basis: 12rem;
+  -ms-flex-preferred-size: 10rem;
+      flex-basis: 10rem;
   margin-right: 0.5rem;
-}
-
-header img {
-  width: 8rem;
 }
 
 header a {
   display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: lighter;
+  font-weight: 500;
   color: white;
   font-size: 1.2rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 header a:hover {
@@ -84,9 +84,8 @@ header a:hover {
   max-width: 600px;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
-  font-weight: bolder;
-  color: white;
   font-weight: 100;
+  color: white;
   font-size: 1.2rem;
   line-height: 1.5;
   margin-top: 1.2rem;
@@ -97,7 +96,7 @@ header a:hover {
   display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: lighter;
+  font-weight: 500;
   color: white;
   font-size: 1.2rem;
   margin: 0 auto;
@@ -119,6 +118,95 @@ header a:hover {
 .block-second-grid-first {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #181f2a;
+}
+
+.block-second-grid-first div {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.block-second-grid-first div img {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-bottom: 30px;
+}
+
+.block-second-grid-first div h1 {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-size: 1.4rem;
+}
+
+.block-second-grid-first div h2 {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 420px) {
+  header nav {
+    -ms-flex-preferred-size: 40vw;
+        flex-basis: 40vw;
+    margin-right: -3vw;
+  }
+  header img {
+    width: 30%;
+  }
+  header a {
+    font-size: 3.5vw;
+  }
+  .block-first-intro a {
+    font-size: 4.5vw;
+    padding: 15px 18vw;
+  }
+  .block-first-intro h1 {
+    font-size: 6vw;
+  }
+  .block-first-intro h2 {
+    font-size: 4vw;
+  }
+  .block-second-grid-first div h1 {
+    font-size: 5vw;
+  }
+  .block-second-grid-first div h2 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header nav {
+    -ms-flex-preferred-size: 12rem;
+        flex-basis: 12rem;
+  }
+  header nav a {
+    font-size: 1rem;
+  }
+  .block-second-grid-first {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

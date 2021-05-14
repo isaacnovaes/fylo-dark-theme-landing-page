@@ -19,8 +19,7 @@
 
 @mixin set-text-subtitle () {
   @include width-margin; 
-  @include font($open,bolder);
-  font-weight: 100;
+  @include font($open,100);
   font-size: 1.2rem;
   line-height: 1.5;
   margin-top: 1.2rem;
@@ -30,6 +29,7 @@
 @mixin set-button() {
   display: block;
   text-decoration: none;
-  @include font ($raleway, lighter);
+  @include font ($raleway, 500);
   font-size: 1.2rem;
+  //width: 60%;
 }
