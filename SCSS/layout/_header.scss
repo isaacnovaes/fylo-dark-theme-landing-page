@@ -12,7 +12,8 @@ header{
     nav {
         display: flex;
         justify-content: space-between;
-        flex-basis: 10rem;
+        width:35vw;
+        max-width: 250px;
         margin-right: 0.5rem;
     }
   

@@ -14,7 +14,7 @@
   @include set-text-title;  
  }
 
- h2 {
+ p {
   @include set-text-subtitle;  
   
  }
@@ -23,12 +23,12 @@
     margin: 0 auto;
     margin-top: 20px;
     padding: 15px 100px;   
-    background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%) );
+    background-image: linear-gradient(to right,$green, $blue );
     border-radius: 25px;
     width: fit-content;
 
     &:hover{
-        background-image:linear-gradient(to right,hsl(176, 68%, 64%));
+        background-image:linear-gradient(to right,$green);
     }
  }
  
@@ -56,13 +56,112 @@
             font-size: 1.4rem;
         }
 
-        h2 {
+        p {
             @include set-text-subtitle;
             font-size: 1rem;
         }
     }     
 }
 
-.block-second-grid-second {
-    //magic side padding: 20px
+.block-third-grid-second {   
+    display: grid;
+    justify-content: center;
+    background-color: $dark-blue-main; 
+
+        figure, article{
+            margin-top: 100px; 
+            overflow: hidden;
+        }
+        figure img {
+            width: 100%;
+        }
+        article{
+
+            h1{
+                @include set-text-title;
+                font-size: 1.8rem;
+            }
+            p{
+                @include set-text-subtitle;
+                font-size: 1rem;
+                text-align: left;
+            }
+            a{
+                display: block;            
+                @include font ($raleway,400);
+                color:$green;
+                text-decoration: none;
+                margin-top:20px;
+                text-align: center;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }        
+}
+
+.block-fourth-grid-third{
+    display: grid;
+    justify-content: center;
+    grid-row-gap:25px;
+    background-color: $dark-blue-main; 
+    padding-top: 100px;
+    position: re;
+    z-index: -5;
+    
+    div{
+        background-color: $dark-blue-testimonials; 
+        position: relative;  
+        width: 90%;  
+        margin: 0 auto;      
+        max-width: 400px;
+        z-index: 0;
+    
+        .quotes{
+            display: block;
+            position: absolute;
+            top:-18%;
+            width: 70px;
+            height: 41px;
+            background: url(/images/bg-quotes.png) no-repeat;
+            z-index: -2;
+        }  
+
+        p {
+            @include width-margin; 
+            width: 85%;
+            @include font($raleway,100);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-top: 1.2rem;
+            text-align: left;
+            word-spacing: 0.1rem;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 40px;
+            margin-left: 8%;
+            margin-top: 10px;
+        }
+        span{
+            display: inline-block;
+            @include font ($raleway, 700);
+            font-size: 0.7rem;
+            margin-left: 10px;
+            &:first-of-type{
+                position: absolute;
+                bottom:11%;
+                left:22%;
+            }
+            &:nth-of-type(2){
+                position: absolute;
+                bottom:4%;
+                left:22%;
+                font-weight: 100;
+                font-size: 0.6rem;
+            }
+        }
+    }   
 }

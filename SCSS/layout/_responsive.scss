@@ -1,50 +1,54 @@
-//nav {flex-basis:make it bigger}
-@media screen and (max-width:420px){
-    header {
-        nav {
-            flex-basis: 40vw;
-            margin-right: -3vw;
-        }
-        img {
-            width: 30%;
-        }
-        a{
-            font-size: 3.5vw;
-        }
-    }  
-    .block-first-intro {
-        a {
-            font-size: 4.5vw;
-            padding: 15px 18vw;
-        }
-        h1 {
-            font-size:6vw;
-        }
-        h2 {
-            font-size:4vw;
-        }
-    }
-    .block-second-grid-first div{
-        h1 {
-            font-size:5vw;
-        }
-        h2 {
-            font-size:4vw;
-        }
-    }
-    
+@media screen and (max-width: $break-point-small-mobile) {
+ header {
+  nav {
+   flex-basis: 38vw;
+  }
+  img {
+   width: 30%;
+  }
+  a {
+   font-size: 3.5vw;
+  }
+ }
+ .block-first-intro {
+  a {
+   font-size: 4.5vw;
+   padding: 15px 50px;
+  }
+  h1 {
+   font-size: 6vw;
+  }
+  p {
+   font-size: 4vw;
+  }
+ }
+ .block-second-grid-first div {
+  h1 {
+   font-size: 5vw;
+  }
+  p {
+   font-size: 4vw;
+  }
+ }
 }
-@media screen and (min-width:992px) {
-    header nav {
-        flex-basis: 12rem;;
-    }
-     header nav a {
-         font-size: 1rem;
-     }
+@media screen and (min-width: $break-point-desktop) {
+ header nav a {
+  font-size: 1rem;
+ }
 
-     //intro image
+ //intro image
 
-     .block-second-grid-first{
-         grid-template-columns: auto auto;
-     }
+ .block-second-grid-first {
+  grid-template-columns: auto auto;
+ }
+
+ .block-third-grid-second {
+  grid-template-columns: auto auto;
+  align-items: center;
+ }
+ .block-fourth-grid-third {
+    grid-template-columns: auto auto auto;  
+ }
 }
+
+//check quotes
