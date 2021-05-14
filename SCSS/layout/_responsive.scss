@@ -48,7 +48,14 @@
  }
  .block-fourth-grid-third {
     grid-template-columns: auto auto auto;  
+    div .quotes{
+       top:-16.5%;
+    }
  }
 }
 
-//check quotes
+@media screen and (max-width:375px) {
+   .block-fourth-grid-third div .quotes{
+      top:-15%;
+   }
+}

@@ -235,7 +235,7 @@ header a:hover {
   grid-row-gap: 25px;
   background-color: #181f2a;
   padding-top: 100px;
-  position: re;
+  position: relative;
   z-index: -5;
 }
 
@@ -350,6 +350,15 @@ header a:hover {
   .block-fourth-grid-third {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
+  }
+  .block-fourth-grid-third div .quotes {
+    top: -16.5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .block-fourth-grid-third div .quotes {
+    top: -15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
