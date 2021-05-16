@@ -1,0 +1,93 @@
+footer{
+    background-color: $dark-blue-footer;
+}
+.footer-container{
+    display: grid;
+    padding-top: 225px;
+    @include width-margin;
+
+    div {
+        margin-bottom: 50px;
+    }
+
+    .paragraph{
+        display: flex;
+        i {
+            color:$white;
+            margin-right: 12px;
+            vertical-align: 15px;
+            position: relative;
+            top:6.5px;
+        }
+        p {
+            @include font ($open,100);
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;            
+        }
+    }
+
+    .details{
+
+        .first-detail{
+            display: flex;
+            margin-bottom: 20px;
+            i {
+                color:$white;
+                margin-right: 12px;
+                vertical-align: 15px;
+                position: relative;
+                top:6.5px;
+            }
+            span {
+                @include font ($open,100);
+                font-size: 1rem;               
+                text-align: left;            
+            }
+        }
+        .second-detail{
+            @extend .first-detail;
+        }
+    }
+
+    .link-1{
+        a {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 10px 0;
+            width: 50%;
+            @include font ($open,100);
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;  
+            transition: 0.3s; 
+            
+            &:hover{
+                font-weight: 900;
+            }
+        }     
+    }
+
+    .link-2{
+        @extend .link-1;
+    }
+
+    .media{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;   
+        width: 40%;
+        margin-bottom: 60px;
+
+        svg{
+            fill: $white;
+            transition: 0.3s;
+
+            &:hover{
+                fill: $green;
+                cursor: pointer;
+            }
+        }
+    }
+}

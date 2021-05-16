@@ -1,6 +1,7 @@
 .block-first-intro {
  background: $dark-blue-intro;
- // url(/images/bg-curvy-mobile.svg) Finish styled background
+ padding-bottom: 200px;
+ //background: url(/images/bg-curvy-desktop.svg) no-repeat ;   FINISH THIS!
 
  figure {
   @include width-margin;
@@ -11,157 +12,242 @@
  }
 
  h1 {
-  @include set-text-title;  
+  @include set-text-title;
  }
 
  p {
-  @include set-text-subtitle;  
-  
+  @include set-text-subtitle;
  }
  a {
-    @include set-button;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 15px 100px;   
-    background-image: linear-gradient(to right,$green, $blue );
-    border-radius: 25px;
-    width: fit-content;
+  @include set-button;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: $blue;
+  border-radius: 25px;
+  text-align: center;
+  width: 20%;
+  min-width: 200px;
+  transition: 0.5s;
 
-    &:hover{
-        background-image:linear-gradient(to right,$green);
-    }
+  &:hover {
+    width: 25%;
+    background-color: $green;
+  }
  }
- 
 }
 
-.block-second-grid-first{
-    display: grid;
-    justify-content: center;
-    background-color: $dark-blue-main;
+.block-second-grid-first {
+ display: grid;
+ justify-content: center;
+ background-color: $dark-blue-main;
 
-    div{
-        margin-top: 100px; 
-        overflow: hidden;     
-        
-        img{
-           display: inline-block;
-           width: fit-content;
-           margin: 0 50%;
-           transform: translate(-50%);
-           margin-bottom: 30px;
-         }
+ div {
+  margin-top: 100px;
+  overflow: hidden;
 
-        h1{
-            @include set-text-title;
-            font-size: 1.4rem;
-        }
+  img {
+   display: inline-block;
+   width: fit-content;
+   margin: 0 50%;
+   transform: translate(-50%);
+   margin-bottom: 30px;
+  }
 
-        p {
-            @include set-text-subtitle;
-            font-size: 1rem;
-        }
-    }     
+  h1 {
+   @include set-text-title;
+   font-size: 1.4rem;
+  }
+
+  p {
+   @include set-text-subtitle;
+   font-size: 1rem;
+  }
+ }
 }
 
-.block-third-grid-second {   
-    display: grid;
-    justify-content: center;
+.block-third-grid-second {
+ display: grid;
+ justify-content: center;
+ background-color: $dark-blue-main;
+
+ figure,
+ article {
+  margin-top: 100px;
+  overflow: hidden;
+ }
+ figure img {
+  width: 100%;
+ }
+ article {
+  h1 {
+   @include set-text-title;
+   font-size: 1.8rem;
+  }
+  p {
+   @include set-text-subtitle;
+   font-size: 1rem;
+   text-align: left;
+  }
+  a {
+   display: block;
+   @include font($raleway, 400);
+   color: $green;
+   text-decoration: none;
+   margin-top: 20px;
+   width: fit-content;
+   margin: 5px auto;
+   text-align: center;
+
+   img {
+    position: relative;
+    top: 2px;
+   }
+   &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+    background-color: transparent;
+   
+   }
+
+   &:hover::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+    background-color: $green;
+   
+   }
+  }
+ }
+}
+
+.block-fourth-grid-third {
+ display: grid;
+ justify-content: center;
+ grid-row-gap: 25px;
+ background-color: $dark-blue-main;
+ padding-top: 100px;
+ position: relative;
+
+ div {
+  background-color: $dark-blue-testimonials;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+
+   .quotes {
+   display: block;
+   position: absolute;
+   top: -18%;
+   width: 70px;
+   height: 41px;
+   background: url(/images/bg-quotes.png) no-repeat;
+  }
+
+  p {
+   @include width-margin;
+   width: 85%;
+   @include font($raleway, 100);
+   font-size: 1.1rem;
+   line-height: 1.8;
+   margin-top: 1.2rem;
+   text-align: left;
+   word-spacing: 0.1rem;
+  }
+
+  img {
+   border-radius: 50%;
+   width: 40px;
+   margin-left: 8%;
+   margin-top: 10px;
+  }
+  span {
+   display: inline-block;
+   @include font($raleway, 700);
+   font-size: 0.7rem;
+   margin-left: 10px;
+   &:first-of-type {
+    position: absolute;
+    bottom: 11%;
+    left: 22%;
+   }
+   &:nth-of-type(2) {
+    position: absolute;
+    bottom: 4%;
+    left: 22%;
+    font-weight: 100;
+    font-size: 0.6rem;
+   }
+  }
+ }
+}
+.form {
     background-color: $dark-blue-main; 
 
-        figure, article{
-            margin-top: 100px; 
-            overflow: hidden;
-        }
-        figure img {
-            width: 100%;
-        }
-        article{
+    .form-container{
+        @include width-margin;
+        background-color: $dark-blue-intro;
+        padding-top:15px;
+        padding-bottom: 15px;
+        box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.5);
+        transform: translateY(50%);
+        border-radius: 15px;
+    }
 
-            h1{
-                @include set-text-title;
-                font-size: 1.8rem;
+    h1 {
+        @include set-text-title;
+        font-size: 1.8rem;
+    }
+    p {
+        @include set-text-subtitle;
+        font-size: 1rem;
+    }
+
+    form {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+
+        input[type=email]{
+            display: block;
+            width: 70%;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 14px;
+            border-radius: 25px;
+            border:none;
+            transition: .5s;
+
+            &:focus{
+                width: 90%;
+                border-radius: 25px;
+                outline: none;
             }
-            p{
-                @include set-text-subtitle;
-                font-size: 1rem;
-                text-align: left;
-            }
-            a{
-                display: block;            
-                @include font ($raleway,400);
-                color:$green;
-                text-decoration: none;
-                margin-top:20px;
-                text-align: center;
+        }
+        input[type=submit]{    
+
+                @include set-button;
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 15px;
+                outline: none;
+                border: none;
+                background-color: $blue;
+                border-radius: 25px;
+                width: 70%;                
+                cursor: pointer;
+                transition: 0.5s;
 
                 &:hover{
-                    text-decoration: underline;
-                }
-            }
-        }        
-}
-
-.block-fourth-grid-third{
-    display: grid;
-    justify-content: center;
-    grid-row-gap:25px;
-    background-color: $dark-blue-main; 
-    padding-top: 100px;
-    position: relative;
-    z-index: -5;
+                    width: 90%;      
+                    background-color: $green;
+                }            
+        }
+    }
     
-    div{
-        background-color: $dark-blue-testimonials; 
-        position: relative;  
-        width: 90%;  
-        margin: 0 auto;      
-        max-width: 400px;
-        z-index: 0;
-    
-        .quotes{
-            display: block;
-            position: absolute;
-            top:-18%;
-            width: 70px;
-            height: 41px;
-            background: url(/images/bg-quotes.png) no-repeat;
-            z-index: -2;
-        }  
-
-        p {
-            @include width-margin; 
-            width: 85%;
-            @include font($raleway,100);
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-top: 1.2rem;
-            text-align: left;
-            word-spacing: 0.1rem;
-        }
-
-        img {
-            border-radius: 50%;
-            width: 40px;
-            margin-left: 8%;
-            margin-top: 10px;
-        }
-        span{
-            display: inline-block;
-            @include font ($raleway, 700);
-            font-size: 0.7rem;
-            margin-left: 10px;
-            &:first-of-type{
-                position: absolute;
-                bottom:11%;
-                left:22%;
-            }
-            &:nth-of-type(2){
-                position: absolute;
-                bottom:4%;
-                left:22%;
-                font-weight: 100;
-                font-size: 0.6rem;
-            }
-        }
-    }   
 }
