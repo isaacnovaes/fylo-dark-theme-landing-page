@@ -50,13 +50,58 @@ header a {
   font-size: 0.8rem;
 }
 
-header a:hover {
-  text-decoration: underline;
+header a::after {
+  content: " ";
+  display: block;
+  height: .5px;
+  width: 100%;
+  position: relative;
+  bottom: -2px;
+  left: .5px;
+  background-color: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header a:hover::after {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
 }
 
 .block-first-intro {
   background: #1c2431;
   padding-bottom: 200px;
+  position: relative;
+}
+
+.block-first-intro figure, .block-first-intro h1, .block-first-intro p, .block-first-intro a {
+  z-index: 2;
+  position: relative;
+}
+
+.block-first-intro::before {
+  content: " ";
+  display: block;
+  background: url(/images/bg-curvy-mobile.svg) no-repeat center bottom;
+  background-size: 100% 90%;
+  width: 100%;
+  height: 26%;
+  position: absolute;
+  bottom: 34.8%;
+  z-index: 1;
+}
+
+.block-first-intro::after {
+  content: " ";
+  display: block;
+  background-color: #181f2a;
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
 }
 
 .block-first-intro figure {
@@ -557,6 +602,15 @@ footer {
   header nav a {
     font-size: 1rem;
   }
+  .block-first-intro::before {
+    background-image: url(/images/bg-curvy-desktop.svg);
+    background-size: 100% 60%;
+    bottom: -1%;
+    height: 80%;
+  }
+  .block-first-intro::after {
+    height: 0;
+  }
   .block-second-grid-first {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
@@ -579,8 +633,8 @@ footer {
     max-width: 900px;
   }
   .footer-container {
-    -ms-grid-columns: 30% 19% 18% 18% auto;
-        grid-template-columns: 30% 19% 18% 18% auto;
+    -ms-grid-columns: 30% auto 15% 15% auto;
+        grid-template-columns: 30% auto 15% 15% auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
     max-width: 900px;
@@ -590,10 +644,12 @@ footer {
     -ms-grid-column-span: 5;
     grid-column: 1/6;
   }
+  .footer-container .details {
+    padding-left: 15px;
+  }
   .footer-container .link-1 a, .footer-container .link-2 a, .footer-container .link-2 a {
     width: 100%;
     padding-top: 0;
-    padding-left: 20px;
   }
   .footer-container .media {
     width: 100%;

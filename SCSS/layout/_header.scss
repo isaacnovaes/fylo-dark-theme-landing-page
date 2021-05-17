@@ -19,10 +19,27 @@ header{
   
     a {
         @include set-button;
-        font-size: 0.8rem;
-        &:hover{
-            text-decoration: underline;
-        }
-    }
+        font-size: 0.8rem;        
 
+        &::after{
+            content: " ";
+            display: block;           
+            height: .5px;
+            width: 100%;
+            position: relative;
+            bottom:-2px;
+            left: .5px;
+            background-color: $white;
+            transform: scaleX(0);
+            transition: 0.5s;
+
+
+        }
+        &:hover{
+            &::after{
+                transform: scaleX(1.1);
+            }
+        }
+
+    }
 }
