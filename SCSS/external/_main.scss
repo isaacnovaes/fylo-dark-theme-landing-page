@@ -1,38 +1,37 @@
-.page-link{
-    position: relative;
-    top:30vh;
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: $dark-blue-footer;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+.page-link {
+ position: relative;
+ top: 30vh;
+ width: 80%;
+ max-width: 500px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: $dark-blue-footer;
+ border-radius: 10px;
+ box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.5);
+ overflow: hidden;
 
-    h1{
-        @include font($open,bolder) ;
-        text-align: center;
-        font-size:2rem;
-    }
+ h1 {
+  @include font($open, bolder);
+  text-align: center;
+  font-size: 2rem;
+ }
 
-    a{
-        @include set-button;
-        margin: 20px auto;
-        padding: 15px 0;
-        outline: none;
-        border: none;
-        text-align: center;
-        background-color: $blue;
-        border-radius: 25px;
-        width: 45%;
-        cursor: pointer;
-        transition: 0.5s;
+ a {
+  @include set-button;
+  margin: 20px auto;
+  padding: 15px 0;
+  outline: none;
+  border: none;
+  text-align: center;
+  background-color: $blue;
+  border-radius: 25px;
+  width: 45%;
+  cursor: pointer;
+  transition: 0.5s;
 
-        &:hover {
-            width: 55%;
-            background-color: $green;
-        }
-    }
-   
+  &:hover {
+   width: 55%;
+   background-color: $green;
+  }
+ }
 }

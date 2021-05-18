@@ -1,35 +1,34 @@
-@mixin font ($font, $weight) {
-  font-family:$font;
-  font-weight: $weight;
-  color: $white;  
+@mixin font($font, $weight) {
+ font-family: $font;
+ font-weight: $weight;
+ color: $white;
 }
 
 @mixin width-margin {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
+ width: 90%;
+ max-width: 600px;
+ margin: 0 auto;
 }
 
-@mixin set-text-title () {
-  @include width-margin; 
-  @include font($open,bolder) ;
-  text-align: center;
-  font-size:2rem;
+@mixin set-text-title() {
+ @include width-margin;
+ @include font($open, bolder);
+ text-align: center;
+ font-size: 2rem;
 }
 
-@mixin set-text-subtitle () {
-  @include width-margin; 
-  @include font($open,100);
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-top: 1.2rem;
-  text-align: center;
+@mixin set-text-subtitle() {
+ @include width-margin;
+ @include font($open, 100);
+ font-size: 1.2rem;
+ line-height: 1.5;
+ margin-top: 1.2rem;
+ text-align: center;
 }
 
 @mixin set-button() {
-  display: block;
-  text-decoration: none;
-  @include font ($raleway, 500);
-  font-size: 1.2rem;
-  //width: 60%;
+ display: block;
+ text-decoration: none;
+ @include font($raleway, 500);
+ font-size: 1.2rem;
 }
