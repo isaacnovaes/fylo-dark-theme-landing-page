@@ -742,14 +742,9 @@ header {
   }
 }
 
-.block-first-intro {
-  -webkit-animation: animate-block-first-intro 1.2s .5s both;
-          animation: animate-block-first-intro 1.2s .5s both;
-}
-
-.block-second-grid-first {
-  -webkit-animation: animate-block-first-intro 1.2s .5s both;
-          animation: animate-block-first-intro 1.2s .5s both;
+.block-first-intro, .block-second-grid-first {
+  -webkit-animation: animate-block-first-intro 1.2s .9s both;
+          animation: animate-block-first-intro 1.2s .9s both;
 }
 
 @-webkit-keyframes animate-block-first-intro {

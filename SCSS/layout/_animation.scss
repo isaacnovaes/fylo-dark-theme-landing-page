@@ -6,12 +6,8 @@ header {
     to {transform: translateX(0);}
 }
 
-.block-first-intro  {
-    animation: animate-block-first-intro 1.2s .5s both;
-}
-
-.block-second-grid-first{
-    animation: animate-block-first-intro 1.2s .5s both;
+.block-first-intro, .block-second-grid-first{
+    animation: animate-block-first-intro 1.2s .9s both;
 }
 
 @keyframes animate-block-first-intro {
