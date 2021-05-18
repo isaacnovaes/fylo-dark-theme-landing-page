@@ -743,8 +743,8 @@ header {
 }
 
 .block-first-intro, .block-second-grid-first {
-  -webkit-animation: animate-block-first-intro 1.2s .9s both;
-          animation: animate-block-first-intro 1.2s .9s both;
+  -webkit-animation: animate-block-first-intro 1s 1s both;
+          animation: animate-block-first-intro 1s 1s both;
 }
 
 @-webkit-keyframes animate-block-first-intro {
