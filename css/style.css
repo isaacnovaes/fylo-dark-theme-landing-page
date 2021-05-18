@@ -716,8 +716,8 @@ footer {
 }
 
 header {
-  -webkit-animation: animate-header 1s .5s both;
-          animation: animate-header 1s .5s both;
+  -webkit-animation: animate-header 1s both;
+          animation: animate-header 1s both;
 }
 
 @-webkit-keyframes animate-header {
@@ -743,14 +743,14 @@ header {
 }
 
 .block-first-intro {
-  -webkit-animation: animate-block-first-intro 2s .5s both;
-          animation: animate-block-first-intro 2s .5s both;
+  -webkit-animation: animate-block-first-intro 1.2s .5s both;
+          animation: animate-block-first-intro 1.2s .5s both;
 }
 
 @-webkit-keyframes animate-block-first-intro {
   from {
-    -webkit-transform: translateY(150%);
-            transform: translateY(150%);
+    -webkit-transform: translateY(220%);
+            transform: translateY(220%);
   }
   to {
     -webkit-transform: translateY(0);
@@ -760,8 +760,8 @@ header {
 
 @keyframes animate-block-first-intro {
   from {
-    -webkit-transform: translateY(150%);
-            transform: translateY(150%);
+    -webkit-transform: translateY(220%);
+            transform: translateY(220%);
   }
   to {
     -webkit-transform: translateY(0);

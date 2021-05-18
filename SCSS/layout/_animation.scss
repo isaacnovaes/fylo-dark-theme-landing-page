@@ -1,5 +1,5 @@
 header {
-    animation: animate-header 1s .5s both;
+    animation: animate-header 1s both;
 }
 @keyframes animate-header {
     from {transform: translateX(-150%);}
@@ -7,9 +7,9 @@ header {
 }
 
 .block-first-intro  {
-    animation: animate-block-first-intro 2s .5s both;
+    animation: animate-block-first-intro 1.2s .5s both;
 }
 @keyframes animate-block-first-intro {
-    from {transform: translateY(150%);}
+    from {transform: translateY(220%);}
     to {transform: translateY(0);}
 }
