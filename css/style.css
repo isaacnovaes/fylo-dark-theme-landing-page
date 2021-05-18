@@ -747,10 +747,15 @@ header {
           animation: animate-block-first-intro 1.2s .5s both;
 }
 
+.block-second-grid-first {
+  -webkit-animation: animate-block-first-intro 1.2s .5s both;
+          animation: animate-block-first-intro 1.2s .5s both;
+}
+
 @-webkit-keyframes animate-block-first-intro {
   from {
-    -webkit-transform: translateY(220%);
-            transform: translateY(220%);
+    -webkit-transform: translateY(150vh);
+            transform: translateY(150vh);
   }
   to {
     -webkit-transform: translateY(0);
@@ -760,8 +765,8 @@ header {
 
 @keyframes animate-block-first-intro {
   from {
-    -webkit-transform: translateY(220%);
-            transform: translateY(220%);
+    -webkit-transform: translateY(150vh);
+            transform: translateY(150vh);
   }
   to {
     -webkit-transform: translateY(0);

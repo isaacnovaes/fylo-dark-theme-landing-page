@@ -9,7 +9,12 @@ header {
 .block-first-intro  {
     animation: animate-block-first-intro 1.2s .5s both;
 }
+
+.block-second-grid-first{
+    animation: animate-block-first-intro 1.2s .5s both;
+}
+
 @keyframes animate-block-first-intro {
-    from {transform: translateY(220%);}
+    from {transform: translateY(150vh);}
     to {transform: translateY(0);}
 }
