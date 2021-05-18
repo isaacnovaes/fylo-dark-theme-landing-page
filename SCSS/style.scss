@@ -1,19 +1,17 @@
 @charset "UTF-8";
 
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-@import 'base/reset';
-@import 'base/fonts';
+@import "base/reset";
+@import "base/fonts";
 
-@import 'home/header';
-@import 'home/main';
-@import 'home/footer';
-@import 'home/responsive';
-@import 'home/animation';
+@import "home/header";
+@import "home/main";
+@import "home/footer";
+@import "home/responsive";
+@import "home/animation";
 
-@import 'external/main';
-@import 'external/responsive';
-@import 'external/animation';
-
-
+@import "external/main";
+@import "external/responsive";
+@import "external/animation";
