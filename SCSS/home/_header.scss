@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$dark-blue-intro;
+    padding: 8px 20px;   
+     
+    img {
+        width: 8rem;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width:35vw;
+        max-width: 250px;
+        margin-right: 0.5rem;
+    }
+  
+    a {
+        @include set-button;
+        font-size: 0.8rem;        
+
+        &::after{
+            content: " ";
+            display: block;           
+            height: .5px;
+            width: 100%;
+            position: relative;
+            bottom:-2px;
+            left: .5px;
+            background-color: $white;
+            transform: scaleX(0);
+            transition: 0.5s;
+        }
+        &:hover{
+            &::after{
+                transform: scaleX(1.1);
+            }
+        }
+
+    }
+}
