@@ -1,0 +1,21 @@
+@media screen and (max-width: $break-point-small-mobile) {
+     
+    
+    .page-link {
+
+        h1{
+            font-size: 1.8rem;
+        }
+
+        a{
+            font-size: 1rem;
+            width: 60%;
+            &:hover {
+                width: 75%;
+                background-color: $green;
+            }
+        }
+       
+    }
+
+}

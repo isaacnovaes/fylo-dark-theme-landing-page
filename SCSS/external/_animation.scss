@@ -7,7 +7,7 @@
     }
 
     a {
-        animation: animate-a .4s 2.5s both;
+        animation: animate-a .4s 3s both;
     }
 }
 
@@ -22,14 +22,14 @@
 
 @keyframes animate-h1 {
 
-    from { transform: translateX(-100%);}
+    from { transform: translateX(-110%);}
     to { transform: translateX(0); }
     
 }
 
 @keyframes animate-a {
 
-    from { transform: translateY(180%);}
+    from { transform: translateY(185%);}
     to { transform: translateX(0); }
     
 }
