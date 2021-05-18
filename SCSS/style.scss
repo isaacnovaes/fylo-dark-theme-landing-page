@@ -6,12 +6,13 @@
 @import 'base/reset';
 @import 'base/fonts';
 
-@import 'layout/header';
-@import 'layout/main';
-@import 'layout/footer';
-@import 'layout/responsive';
-@import 'layout/animation';
+@import 'home/header';
+@import 'home/main';
+@import 'home/footer';
+@import 'home/responsive';
+@import 'home/animation';
 
-
+@import 'external/main';
+@import 'external/animation';
 
 
