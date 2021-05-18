@@ -1,0 +1,15 @@
+header {
+    animation: animate-header 1s .5s forwards;
+}
+@keyframes animate-header {
+    from {transform: translateX(-150%);}
+    to {transform: translateX(0);}
+}
+
+.block-first-intro  {
+    animation: animate-block-first-intro 2s .5s forwards;
+}
+@keyframes animate-block-first-intro {
+    from {transform: translateY(150%);}
+    to {transform: translateY(0);}
+}
