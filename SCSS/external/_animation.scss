@@ -1,20 +1,22 @@
 .page-link {
 
-    animation: animate-section 1s .1s both;
+    animation: animate-section 2s .1s ease both;
 
     h1 {
-        animation: animate-h1 1s 1.1s both;
+        animation: animate-h1 1s 1.7s both;
     }
 
     a {
-        animation: animate-a .4s 2s both;
+        animation: animate-a .4s 2.5s both;
     }
 }
 
 @keyframes animate-section {
 
-    from { transform: translateY(-150vw);}
-    to { transform: translateY(0); }
+    0% { transform: translateY(-150vw);}
+    18% { transform: translateY(0); }
+    50% {transform: rotate(15deg); transform-origin: 0 0;}
+    100% {transform: rotate(0); transform-origin: 0 0;}
     
 }
 
