@@ -98,6 +98,6 @@ header {
 
 ### Continued development
 
-Well, I think I took a few more hours than what I should to complete this challenge. I did because I didn't have enough practice and experience to code fast. However, surprisingly, after I got how the SASS file structure works, it went so fast. So I plain on taking another HTML-CSS challenge so that I can solidify my knowledge and practise the development workflow. 
+Well, I think I took a few more hours than what I should to complete this challenge. I did it because I didn't have enough practice and experience to code fast. However, surprisingly, after I got how the SASS file structure works, it went so fast. So I plain on taking another HTML-CSS challenge so that I can solidify my knowledge and practise the development workflow. 
 
 
