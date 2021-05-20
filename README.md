@@ -61,6 +61,11 @@ I have realized that SASS makes CSS so much more practical. Mainly because of SA
   font-weight: $weight;
   color: $white;  
 }
+@mixin width-margin {
+ width: 90%;
+ max-width: 600px;
+ margin: 0 auto;
+}
 @mixin set-text-title () {
   @include width-margin; 
   @include font($open,bolder) ;
