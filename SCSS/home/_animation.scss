@@ -10,9 +10,11 @@ header {
  }
 }
 
-.block-first-intro,
-.block-second-grid-first {
+.block-first-intro{
+    overflow: hidden;
+   figure,h1,p,a, &::after, &::before {
  animation: animate-block-first-intro 1s 1s both;
+  }
 }
 
 @keyframes animate-block-first-intro {

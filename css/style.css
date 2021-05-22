@@ -101,11 +101,11 @@ header a {
 header a::after {
   content: " ";
   display: block;
-  height: .5px;
+  height: 0.5px;
   width: 100%;
   position: relative;
   bottom: -2px;
-  left: .5px;
+  left: 0.5px;
   background-color: white;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -703,7 +703,8 @@ footer {
   .footer-container .details {
     padding-left: 15px;
   }
-  .footer-container .link-1 a, .footer-container .link-2 a, .footer-container .link-2 a {
+  .footer-container .link-1 a, .footer-container .link-2 a,
+  .footer-container .link-2 a {
     width: 100%;
     padding-top: 0;
   }
@@ -745,7 +746,11 @@ header {
   }
 }
 
-.block-first-intro, .block-second-grid-first {
+.block-first-intro {
+  overflow: hidden;
+}
+
+.block-first-intro figure, .block-first-intro h1, .block-first-intro p, .block-first-intro a, .block-first-intro::after, .block-first-intro::before {
   -webkit-animation: animate-block-first-intro 1s 1s both;
           animation: animate-block-first-intro 1s 1s both;
 }
@@ -834,8 +839,8 @@ header {
 }
 
 .page-link {
-  -webkit-animation: animate-section 2s .1s ease both;
-          animation: animate-section 2s .1s ease both;
+  -webkit-animation: animate-section 2s 0.1s ease both;
+          animation: animate-section 2s 0.1s ease both;
 }
 
 .page-link h1 {
@@ -844,8 +849,8 @@ header {
 }
 
 .page-link a {
-  -webkit-animation: animate-a .4s 3s both;
-          animation: animate-a .4s 3s both;
+  -webkit-animation: animate-a 0.4s 3s both;
+          animation: animate-a 0.4s 3s both;
 }
 
 @-webkit-keyframes animate-section {
