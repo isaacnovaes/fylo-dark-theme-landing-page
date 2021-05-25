@@ -70,6 +70,7 @@ header {
           align-items: center;
   background-color: #1c2431;
   padding: 8px 20px;
+  margin: 20px 0;
 }
 
 header img {
@@ -356,7 +357,7 @@ header a:hover::after {
           justify-content: center;
   grid-row-gap: 25px;
   background-color: #181f2a;
-  padding-top: 100px;
+  padding-top: 200px;
   position: relative;
 }
 
@@ -469,13 +470,12 @@ header a:hover::after {
 .form form {
   width: 100%;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 650px;
 }
 
-.form form input[type="email"] {
+.form form input[type=email] {
   display: block;
   width: 70%;
-  max-width: 400px;
   margin: 0 auto;
   margin-top: 50px;
   padding: 14px;
@@ -485,13 +485,13 @@ header a:hover::after {
   transition: 0.5s;
 }
 
-.form form input[type="email"]:focus {
+.form form input[type=email]:focus {
   width: 90%;
   border-radius: 25px;
   outline: none;
 }
 
-.form form input[type="submit"] {
+.form form input[type=submit] {
   display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -511,7 +511,7 @@ header a:hover::after {
   transition: 0.5s;
 }
 
-.form form input[type="submit"]:hover {
+.form form input[type=submit]:hover {
   width: 90%;
   background-color: #65e2d9;
 }
@@ -537,11 +537,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer-container .paragraph i {
-  color: white;
-  margin-right: 12px;
+.footer-container .paragraph img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 25px;
+  margin-right: 10px;
   vertical-align: 15px;
   position: relative;
   top: 6.5px;
@@ -563,9 +568,8 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-container .details .first-detail i, .footer-container .details .second-detail i {
-  color: white;
-  margin-right: 12px;
+.footer-container .details .first-detail svg, .footer-container .details .second-detail svg {
+  margin-right: 10px;
   vertical-align: 15px;
   position: relative;
   top: 6.5px;
@@ -577,6 +581,13 @@ footer {
   color: white;
   font-size: 1rem;
   text-align: left;
+}
+
+.footer-container .details .second-detail svg {
+  margin-right: 10px;
+  vertical-align: 15px;
+  position: relative;
+  top: 5px;
 }
 
 .footer-container .link-1 a, .footer-container .link-2 a {
@@ -688,9 +699,36 @@ footer {
   .form .form-container {
     max-width: 900px;
   }
+  .form .form-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25px;
+  }
+  .form .form-container form input[type=email] {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    margin: 0;
+  }
+  .form .form-container form input[type=email]:focus {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+    border-radius: 25px;
+    outline: none;
+  }
+  .form .form-container form input[type="submit"] {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin: 0;
+  }
   .footer-container {
-    -ms-grid-columns: 30% auto 15% 15% auto;
-        grid-template-columns: 30% auto 15% 15% auto;
+    -ms-grid-columns: 30% auto auto auto auto;
+        grid-template-columns: 30% auto auto auto auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
     max-width: 900px;
