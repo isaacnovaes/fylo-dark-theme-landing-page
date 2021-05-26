@@ -1,99 +1,99 @@
 footer {
- background-color: $dark-blue-footer;
+    background-color: $dark-blue-footer;
 }
 .footer-container {
- display: grid;
- padding-top: 225px;
- @include width-margin;
+    display: grid;
+    padding-top: 225px;
+    @include width-margin;
 
- div {
-  margin-bottom: 50px;
- }
+    div {
+        margin-bottom: 50px;
+    }
 
- .paragraph {
-  display: flex;
-  align-items: center;
-  img{
-   align-self: flex-start;
-  width: 25px;
-   margin-right: 10px;
-   vertical-align: 15px;
-   position: relative;
-   top: 6.5px;   
-  }
-  p {
-   @include font($open, 100);
-   font-size: 1rem;
-   line-height: 1.5;
-   text-align: left;
-  }
- }
+    .paragraph {
+        display: flex;
+        align-items: center;
+        img {
+            align-self: flex-start;
+            width: 25px;
+            margin-right: 10px;
+            vertical-align: 15px;
+            position: relative;
+            top: 6.5px;
+        }
+        p {
+            @include font($open, 100);
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+        }
+    }
 
- .details {
-  .first-detail {
-   display: flex;
-   margin-bottom: 20px;
-   svg {
-    margin-right: 10px;
-    vertical-align: 15px;
-    position: relative;
-    top: 6.5px;
-   }
-   span {
-    @include font($open, 100);
-    font-size: 1rem;
-    text-align: left;
-   }
-  }
-  .second-detail {
-   @extend .first-detail;
-   svg {
-    margin-right: 10px;
-    vertical-align: 15px;
-    position: relative;
-    top: 5px;
-   }
-  }
- }
+    .details {
+        .first-detail {
+            display: flex;
+            margin-bottom: 20px;
+            svg {
+                margin-right: 10px;
+                vertical-align: 15px;
+                position: relative;
+                top: 6.5px;
+            }
+            span {
+                @include font($open, 100);
+                font-size: 1rem;
+                text-align: left;
+            }
+        }
+        .second-detail {
+            @extend .first-detail;
+            svg {
+                margin-right: 10px;
+                vertical-align: 15px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
 
- .link-1 {
-  a {
-   display: block;
-   text-decoration: none;
-   margin-bottom: 10px;
-   padding: 10px 0;
-   width: 50%;
-   @include font($open, 100);
-   font-size: 1rem;
-   line-height: 1.5;
-   text-align: left;
-   transition: 0.3s;
+    .link-1 {
+        a {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 10px 0;
+            width: 50%;
+            @include font($open, 100);
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+            transition: 0.3s;
 
-   &:hover {
-    font-weight: 900;
-   }
-  }
- }
+            &:hover {
+                font-weight: 900;
+            }
+        }
+    }
 
- .link-2 {
-  @extend .link-1;
- }
+    .link-2 {
+        @extend .link-1;
+    }
 
- .media {
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  width: 40%;
-  margin-bottom: 60px;
+    .media {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 40%;
+        margin-bottom: 60px;
 
-  svg {
-   fill: $white;
-   transition: 0.3s;
+        svg {
+            fill: $white;
+            transition: 0.3s;
 
-   &:hover {
-    fill: $green;
-    cursor: pointer;
-   }
-  }
- }
+            &:hover {
+                fill: $green;
+                cursor: pointer;
+            }
+        }
+    }
 }

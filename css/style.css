@@ -473,7 +473,7 @@ header a:hover::after {
   max-width: 650px;
 }
 
-.form form input[type=email] {
+.form form input[type="email"] {
   display: block;
   width: 70%;
   margin: 0 auto;
@@ -485,13 +485,13 @@ header a:hover::after {
   transition: 0.5s;
 }
 
-.form form input[type=email]:focus {
+.form form input[type="email"]:focus {
   width: 90%;
   border-radius: 25px;
   outline: none;
 }
 
-.form form input[type=submit] {
+.form form input[type="submit"] {
   display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -511,7 +511,7 @@ header a:hover::after {
   transition: 0.5s;
 }
 
-.form form input[type=submit]:hover {
+.form form input[type="submit"]:hover {
   width: 90%;
   background-color: #65e2d9;
 }
@@ -710,12 +710,12 @@ footer {
             align-items: center;
     margin-top: 25px;
   }
-  .form .form-container form input[type=email] {
+  .form .form-container form input[type="email"] {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     margin: 0;
   }
-  .form .form-container form input[type=email]:focus {
+  .form .form-container form input[type="email"]:focus {
     -webkit-transform: scaleX(1.1);
             transform: scaleX(1.1);
     border-radius: 25px;
@@ -788,7 +788,10 @@ header {
   overflow: hidden;
 }
 
-.block-first-intro figure, .block-first-intro h1, .block-first-intro p, .block-first-intro a, .block-first-intro::after, .block-first-intro::before {
+.block-first-intro figure,
+.block-first-intro h1,
+.block-first-intro p,
+.block-first-intro a, .block-first-intro::after, .block-first-intro::before {
   -webkit-animation: animate-block-first-intro 1s 1s both;
           animation: animate-block-first-intro 1s 1s both;
 }

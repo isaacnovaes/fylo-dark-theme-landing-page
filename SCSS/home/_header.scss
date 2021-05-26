@@ -1,42 +1,42 @@
 header {
- display: flex;
- justify-content: space-between;
- align-items: center;
- background-color: $dark-blue-intro;
- padding: 8px 20px;
- margin: 20px 0;
- img {
-  width: 8rem;
- }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-blue-intro;
+    padding: 8px 20px;
+    margin: 20px 0;
+    img {
+        width: 8rem;
+    }
 
- nav {
-  display: flex;
-  justify-content: space-between;
-  width: 35vw;
-  max-width: 250px;
-  margin-right: 0.5rem;
- }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 35vw;
+        max-width: 250px;
+        margin-right: 0.5rem;
+    }
 
- a {
-  @include set-button;
-  font-size: 0.8rem;
+    a {
+        @include set-button;
+        font-size: 0.8rem;
 
-  &::after {
-   content: " ";
-   display: block;
-   height: 0.5px;
-   width: 100%;
-   position: relative;
-   bottom: -2px;
-   left: 0.5px;
-   background-color: $white;
-   transform: scaleX(0);
-   transition: 0.5s;
-  }
-  &:hover {
-   &::after {
-    transform: scaleX(1.1);
-   }
-  }
- }
+        &::after {
+            content: " ";
+            display: block;
+            height: 0.5px;
+            width: 100%;
+            position: relative;
+            bottom: -2px;
+            left: 0.5px;
+            background-color: $white;
+            transform: scaleX(0);
+            transition: 0.5s;
+        }
+        &:hover {
+            &::after {
+                transform: scaleX(1.1);
+            }
+        }
+    }
 }
