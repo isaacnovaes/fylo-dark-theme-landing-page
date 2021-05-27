@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo dark theme landing page solution
 
-This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). 
+![Preview](/design/desktop-preview.jpg)
 
 ## Table of contents
 
@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot - Check the designs in detail
 
-- [Mobile](design/mobile-solution.png)
+- [Mobile](/design/mobile.png)
 
-- [Desktop](design/desktop-solution.png)
+- [Desktop](/design/desktop.png)
 
 - [External page, link destination](design/external-page.png)
 
@@ -49,7 +49,7 @@ Users should be able to:
 - SASS
 - Flexbox
 - CSS Grid
-- [Styled Components](https://styled-components.com/) - For styles
+- Styled Components
 
 ### What I learned
 
