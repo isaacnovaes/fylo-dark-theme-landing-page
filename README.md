@@ -35,7 +35,6 @@ Users should be able to:
 
 ### Links
 
-- [GitHub repository](https://github.com/isaacnovaes/fylo-dark-theme-landing-page)
 - [Live site](https://youthful-stonebraker-6efbf6.netlify.app)
 
 ## My process
