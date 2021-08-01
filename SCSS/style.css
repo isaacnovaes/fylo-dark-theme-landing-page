@@ -19,6 +19,48 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -444,6 +486,16 @@ header a:hover::after {
   border-radius: 15px;
 }
 
+.form .form-container #form-validation-message {
+  width: 70%;
+  margin: 20px auto 0;
+  text-align: left;
+  color: rgba(255, 0, 0, 0.856);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  visibility: hidden;
+}
+
 .form h1 {
   width: 90%;
   max-width: 600px;
@@ -476,7 +528,7 @@ header a:hover::after {
   max-width: 650px;
 }
 
-.form form input[type="email"] {
+.form form input[type="text"] {
   display: block;
   width: 70%;
   margin: 0 auto;
@@ -488,7 +540,7 @@ header a:hover::after {
   transition: 0.5s;
 }
 
-.form form input[type="email"]:focus {
+.form form input[type="text"]:focus {
   width: 90%;
   border-radius: 25px;
 }
@@ -713,12 +765,12 @@ footer {
             align-items: center;
     margin-top: 25px;
   }
-  .form .form-container form input[type="email"] {
+  .form .form-container form input[type="text"] {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     margin: 0;
   }
-  .form .form-container form input[type="email"]:focus {
+  .form .form-container form input[type="text"]:focus {
     -webkit-transform: scaleX(1.1);
             transform: scaleX(1.1);
     border-radius: 25px;
@@ -986,4 +1038,3 @@ header {
             transform: translateX(0);
   }
 }
-/*# sourceMappingURL=style.css.map */

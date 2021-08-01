@@ -8,7 +8,7 @@
         <meta name="keywords" content="HTML, CSS" />
         <meta name="author" content="Isaac Novaes" />
         <title>Fylo Landing Page</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="/SCSS/style.css" />
         <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon"/>  
     </head>
     <body>
@@ -87,10 +87,11 @@
                 <div class="form-container">
                     <h1>Get early access today</h1>
                     <p>It only takes a minute ti sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you</p>
-                    <form  netlify>
-                        <input type="email" aria-label="email" name="email" placeholder="email@example.com" required/>
+                    <form  netlify name="submitEmail" onsubmit="return validateEmail()">
+                        <input type="text" aria-label="email" name="email" placeholder="email@example.com" />
                         <input type="submit" value="Get Started For Free" />
                     </form>
+                    <div id="form-validation-message">Wrong email format</div>
                 </div>
             </section>
         </main>
@@ -135,5 +136,6 @@
                 </div>
             </section>
         </footer>
+        <script src="/index.js"></script>
     </body>
 </html>
