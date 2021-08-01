@@ -23,7 +23,7 @@ html:focus-within {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 input,
-button {
+button, textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
