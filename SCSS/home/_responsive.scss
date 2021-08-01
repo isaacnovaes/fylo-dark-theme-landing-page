@@ -1,120 +1,120 @@
 @media screen and (max-width: $break-point-small-mobile) {
-    header {
-        nav {
-            flex-basis: 38vw;
-        }
-        img {
-            width: 30%;
-        }
-        a {
-            font-size: 3.5vw;
-        }
-    }
-    .block-first-intro {
-        a {
-            font-size: 4.5vw;
-            padding: 15px 50px;
-        }
-        h1 {
-            font-size: 6vw;
-        }
-        p {
-            font-size: 4vw;
-        }
-    }
-    .block-second-grid-first div {
-        h1 {
-            font-size: 5vw;
-        }
-        p {
-            font-size: 4vw;
-        }
-    }
+	header {
+		nav {
+			flex-basis: 38vw;
+		}
+		img {
+			width: 30%;
+		}
+		a {
+			font-size: 3.5vw;
+		}
+	}
+	.block-first-intro {
+		a {
+			font-size: 4.5vw;
+			padding: 15px 50px;
+		}
+		h1 {
+			font-size: 6vw;
+		}
+		p {
+			font-size: 4vw;
+		}
+	}
+	.block-second-grid-first div {
+		h1 {
+			font-size: 5vw;
+		}
+		p {
+			font-size: 4vw;
+		}
+	}
 
-    .form .form-container form input[type="submit"] {
-        font-size: 1rem;
-    }
+	.form .form-container form input[type="submit"] {
+		font-size: 1rem;
+	}
 }
 
 @media screen and (min-width: $break-point-desktop) {
-    header nav a {
-        font-size: 1rem;
-    }
-    .block-first-intro {
-        &::before {
-            background-image: url("/images/bg-curvy-desktop.svg");
-            background-size: 100% 60%;
-            bottom: -1%;
-            height: 80%;
-        }
-        &::after {
-            height: 0;
-        }
-    }
+	header nav a {
+		font-size: 1rem;
+	}
+	.block-first-intro {
+		&::before {
+			background-image: url("/images/bg-curvy-desktop.svg");
+			background-size: 100% 60%;
+			bottom: -1%;
+			height: 80%;
+		}
+		&::after {
+			height: 0;
+		}
+	}
 
-    .block-second-grid-first {
-        grid-template-columns: auto auto;
-    }
+	.block-second-grid-first {
+		grid-template-columns: auto auto;
+	}
 
-    .block-third-grid-second {
-        grid-template-columns: auto auto;
-        align-items: center;
-    }
-    .block-fourth-grid-third {
-        grid-template-columns: auto auto auto;
-        div .quotes {
-            top: -16.5%;
-        }
-    }
+	.block-third-grid-second {
+		grid-template-columns: auto auto;
+		align-items: center;
+	}
+	.block-fourth-grid-third {
+		grid-template-columns: auto auto auto;
+		div .quotes {
+			top: -16.5%;
+		}
+	}
 
-    .form .form-container {
-        max-width: 900px;
-        form {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 25px;
-            input[type="text"] {
-                flex-basis: 60%;
-                margin: 0;
+	.form .form-container {
+		max-width: 900px;
+		form {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 25px;
+			input[type="text"] {
+				flex-basis: 60%;
+				margin: 0;
 
-                &:focus {
-                    transform: scaleX(1.1);
-                    border-radius: 25px;
-                    outline: none;
-                }
-            }
-            input[type="submit"] {
-                flex-basis: 30%;
-                margin: 0;
-            }
-        }
-    }
-    .footer-container {
-        grid-template-columns: 30% auto auto auto auto;
-        grid-template-rows: auto auto;
-        max-width: 900px;
+				&:focus {
+					transform: scaleX(1.1);
+					border-radius: 25px;
+					outline: none;
+				}
+			}
+			input[type="submit"] {
+				flex-basis: 30%;
+				margin: 0;
+			}
+		}
+	}
+	.footer-container {
+		grid-template-columns: 30% auto auto auto auto;
+		grid-template-rows: auto auto;
+		max-width: 900px;
 
-        .logo {
-            grid-column: 1/6;
-        }
-        .details {
-            padding-left: 15px;
-        }
+		.logo {
+			grid-column: 1/6;
+		}
+		.details {
+			padding-left: 15px;
+		}
 
-        .link-1 a,
-        .link-2 a {
-            width: 100%;
-            padding-top: 0;
-        }
-        .media {
-            width: 100%;
-        }
-    }
+		.link-1 a,
+		.link-2 a {
+			width: 100%;
+			padding-top: 0;
+		}
+		.media {
+			width: 100%;
+		}
+	}
 }
 
 @media screen and (max-width: 375px) {
-    .block-fourth-grid-third div .quotes {
-        top: -15%;
-    }
+	.block-fourth-grid-third div .quotes {
+		top: -15%;
+	}
 }

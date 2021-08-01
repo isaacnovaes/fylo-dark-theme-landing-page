@@ -1,32 +1,32 @@
 header {
-    animation: animate-header 1s both;
+	animation: animate-header 1s both;
 }
 @keyframes animate-header {
-    from {
-        transform: translateX(-150%);
-    }
-    to {
-        transform: translateX(0);
-    }
+	from {
+		transform: translateX(-150%);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 .block-first-intro {
-    overflow: hidden;
-    figure,
-    h1,
-    p,
-    a,
-    &::after,
-    &::before {
-        animation: animate-block-first-intro 1s 1s both;
-    }
+	overflow: hidden;
+	figure,
+	h1,
+	p,
+	a,
+	&::after,
+	&::before {
+		animation: animate-block-first-intro 1s 1s both;
+	}
 }
 
 @keyframes animate-block-first-intro {
-    from {
-        transform: translateY(150vh);
-    }
-    to {
-        transform: translateY(0);
-    }
+	from {
+		transform: translateY(150vh);
+	}
+	to {
+		transform: translateY(0);
+	}
 }

@@ -1,46 +1,46 @@
 .page-link {
-    animation: animate-section 2s 0.1s ease both;
+	animation: animate-section 2s 0.1s ease both;
 
-    h1 {
-        animation: animate-h1 1s 1.7s both;
-    }
+	h1 {
+		animation: animate-h1 1s 1.7s both;
+	}
 
-    a {
-        animation: animate-a 0.4s 3s both;
-    }
+	a {
+		animation: animate-a 0.4s 3s both;
+	}
 }
 
 @keyframes animate-section {
-    0% {
-        transform: translateY(-150vw);
-    }
-    18% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: rotate(15deg);
-        transform-origin: 0 0;
-    }
-    100% {
-        transform: rotate(0);
-        transform-origin: 0 0;
-    }
+	0% {
+		transform: translateY(-150vw);
+	}
+	18% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: rotate(15deg);
+		transform-origin: 0 0;
+	}
+	100% {
+		transform: rotate(0);
+		transform-origin: 0 0;
+	}
 }
 
 @keyframes animate-h1 {
-    from {
-        transform: translateX(-110%);
-    }
-    to {
-        transform: translateX(0);
-    }
+	from {
+		transform: translateX(-110%);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 @keyframes animate-a {
-    from {
-        transform: translateY(185%);
-    }
-    to {
-        transform: translateX(0);
-    }
+	from {
+		transform: translateY(185%);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
