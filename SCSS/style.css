@@ -513,8 +513,7 @@ header a:hover::after {
 }
 
 .form form input[type="text"]:focus {
-  width: 90%;
-  border-radius: 25px;
+  outline: none;
 }
 
 .form form input[type="submit"] {
@@ -745,8 +744,8 @@ footer {
   .form .form-container form input[type="text"]:focus {
     -webkit-transform: scaleX(1.1);
             transform: scaleX(1.1);
-    border-radius: 25px;
-    outline: none;
+    -webkit-box-shadow: 0 0 0 2px #1c2431, 0 0 0 4px #65e2d9;
+            box-shadow: 0 0 0 2px #1c2431, 0 0 0 4px #65e2d9;
   }
   .form .form-container form input[type="submit"] {
     -ms-flex-preferred-size: 30%;

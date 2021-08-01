@@ -80,8 +80,7 @@
 
 				&:focus {
 					transform: scaleX(1.1);
-					border-radius: 25px;
-					outline: none;
+					box-shadow: 0 0 0 2px $dark-blue-intro, 0 0 0 4px $green;	
 				}
 			}
 			input[type="submit"] {

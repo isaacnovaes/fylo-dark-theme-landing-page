@@ -9,7 +9,7 @@ const validateEmail = () => {
 			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
 		setTimeout(() => {
 			message.style.visibility = "hidden";
-			input.style.boxShadow = "none";
+			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
 		}, 3000);
 		return false;
 	}
@@ -20,8 +20,8 @@ const validateEmail = () => {
 			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
 		setTimeout(() => {
 			message.style.visibility = "hidden";
-			input.style.boxShadow = "none";
-		}, 5000);
+			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+		}, 4000);
 		return false;
 	}
 	if (input.value.startsWith("@") || input.value.endsWith("@")) {
@@ -31,8 +31,8 @@ const validateEmail = () => {
 			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
 		setTimeout(() => {
 			message.style.visibility = "hidden";
-			input.style.boxShadow = "none";
-		}, 5000);
+			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+		}, 4000);
 		return false;
 	}
 	if (input.value.charAt(input.value.indexOf("@") + 1) == ".") {
@@ -42,8 +42,8 @@ const validateEmail = () => {
 			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
 		setTimeout(() => {
 			message.style.visibility = "hidden";
-			input.style.boxShadow = "none";
-		}, 5000);
+			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+		}, 4000);
 		return false;
 	}
 	if (input.value.startsWith(".") || input.value.endsWith(".")) {
@@ -53,8 +53,8 @@ const validateEmail = () => {
 			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
 		setTimeout(() => {
 			message.style.visibility = "hidden";
-			input.style.boxShadow = "none";
-		}, 5000);
+			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+		}, 4000);
 		return false;
 	}
 	if (input.value.charAt(input.value.indexOf(".") + 1) == ".") {
@@ -64,8 +64,8 @@ const validateEmail = () => {
 			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
 		setTimeout(() => {
 			message.style.visibility = "hidden";
-			input.style.boxShadow = "none";
-		}, 5000);
+			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+		}, 4000);
 		return false;
 	}
 };

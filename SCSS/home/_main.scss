@@ -261,8 +261,7 @@
 			transition: 0.5s;
 
 			&:focus {
-				width: 90%;
-				border-radius: 25px;
+				outline: none;	
 			}
 		}
 		input[type="submit"] {
