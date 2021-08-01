@@ -35,7 +35,7 @@ const validateEmail = () => {
 		}, 5000);
 		return false;
 	}
-	if (input.value.charAt(input.value.indexOf("@") + 1) == "." ) {
+	if (input.value.charAt(input.value.indexOf("@") + 1) == ".") {
 		message.innerHTML = "After @, there cannot be a dot";
 		message.style.visibility = "visible";
 		input.style.boxShadow =
@@ -46,7 +46,7 @@ const validateEmail = () => {
 		}, 5000);
 		return false;
 	}
-	if (input.value.startsWith(".") || input.value.endsWith(".") ) {
+	if (input.value.startsWith(".") || input.value.endsWith(".")) {
 		message.innerHTML = "Email cannot start or end with a dot";
 		message.style.visibility = "visible";
 		input.style.boxShadow =
@@ -57,7 +57,7 @@ const validateEmail = () => {
 		}, 5000);
 		return false;
 	}
-	if (input.value.search(/../) != -1 ) {
+	if (input.value.charAt(input.value.indexOf(".") + 1) == ".") {
 		message.innerHTML = "Email cannot have double dots";
 		message.style.visibility = "visible";
 		input.style.boxShadow =
@@ -68,5 +68,4 @@ const validateEmail = () => {
 		}, 5000);
 		return false;
 	}
-    
 };
