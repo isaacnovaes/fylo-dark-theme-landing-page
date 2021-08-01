@@ -24,8 +24,8 @@ const validateEmail = () => {
 		}, 5000);
 		return false;
 	}
-	if (input.value.charAt(0) == "@") {
-		message.innerHTML = "Email cannot start with @";
+	if (input.value.startsWith("@") || input.value.endsWith("@")) {
+		message.innerHTML = "Email cannot start or end with @";
 		message.style.visibility = "visible";
 		input.style.boxShadow =
 			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
