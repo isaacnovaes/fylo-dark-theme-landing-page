@@ -1,71 +1,50 @@
-const validateEmail = () => {
-	let message = document.getElementById("form-validation-message");
-	let input = document.forms.submitEmail.elements.email;
+const form = document.querySelector("form"),
+	message = document.getElementById("form-validation-message"),
+	input = document.forms.submitEmail.elements.email;
 
-	if (input.value === "" || input.value === " ") {
-		message.innerHTML = "Enter an email";
-		message.style.visibility = "visible";
-		input.style.boxShadow =
-			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
+form.addEventListener("submit", validateEmail);
+
+function validateEmail(event) {
+	event.preventDefault();
+	if (input.value.trim() === "") {
+		showError("Enter an email");
 		setTimeout(() => {
-			message.style.visibility = "hidden";
-			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+			resetStyle();
 		}, 3000);
-		return false;
-	}
-	if (!input.value.includes("@")) {
-		message.innerHTML = "Email is missing @";
-		message.style.visibility = "visible";
-		input.style.boxShadow =
-			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
+	} else if (!input.value.trim().includes("@")) {
+		showError("Email is missing @");
 		setTimeout(() => {
-			message.style.visibility = "hidden";
-			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+			resetStyle();
 		}, 4000);
-		return false;
-	}
-	if (input.value.startsWith("@") || input.value.endsWith("@")) {
-		message.innerHTML = "Email cannot start or end with @";
-		message.style.visibility = "visible";
-		input.style.boxShadow =
-			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
+	} else if (/(^@|@$)/.test(input.value.trim())) {
+		showError("Email cannot start or end with @");
 		setTimeout(() => {
-			message.style.visibility = "hidden";
-			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+			resetStyle();
 		}, 4000);
-		return false;
-	}
-	if (input.value.charAt(input.value.indexOf("@") + 1) == ".") {
-		message.innerHTML = "After @, there cannot be a dot";
-		message.style.visibility = "visible";
-		input.style.boxShadow =
-			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
+	} else if (/(\.@|@\.)/g.test(input.value.trim())) {
+		showError("After or before @, there cannot be a dot");
 		setTimeout(() => {
-			message.style.visibility = "hidden";
-			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+			resetStyle();
 		}, 4000);
-		return false;
-	}
-	if (input.value.startsWith(".") || input.value.endsWith(".")) {
-		message.innerHTML = "Email cannot start or end with a dot";
-		message.style.visibility = "visible";
-		input.style.boxShadow =
-			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
+	} else if (/(^\.|\.$)/.test(input.value.trim())) {
+		showError("Email cannot start or end with a dot");
 		setTimeout(() => {
-			message.style.visibility = "hidden";
-			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+			resetStyle();
 		}, 4000);
-		return false;
-	}
-	if (input.value.charAt(input.value.indexOf(".") + 1) == ".") {
-		message.innerHTML = "Email cannot have double dots";
-		message.style.visibility = "visible";
-		input.style.boxShadow =
-			"0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
+	} else if (/\.\./.test(input.value.trim())) {
+		showError("Email cannot have double dots");
 		setTimeout(() => {
-			message.style.visibility = "hidden";
-			input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)"; // come back to initial style
+			resetStyle();
 		}, 4000);
-		return false;
 	}
-};
+}
+
+function showError(text) {
+	message.textContent = text;
+	message.style.visibility = "visible";
+	input.style.boxShadow = "0 0 0 4px hsl(217, 28%, 15%), 0 0 0 6px rgba(255, 0, 0, 0.856) ";
+}
+function resetStyle() {
+	message.style.visibility = "hidden";
+	input.style.boxShadow = "0 0 0 2px hsl(217, 28%, 15%), 0 0 0 4px hsl(176, 68%, 64%)";
+}
