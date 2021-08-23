@@ -500,7 +500,7 @@ header a:hover::after {
   max-width: 650px;
 }
 
-.form form input[type="text"] {
+.form form input[type="email"] {
   display: block;
   width: 70%;
   margin: 0 auto;
@@ -512,7 +512,7 @@ header a:hover::after {
   transition: 0.5s;
 }
 
-.form form input[type="text"]:focus {
+.form form input[type="email"]:focus {
   outline: none;
 }
 
@@ -736,12 +736,12 @@ footer {
             align-items: center;
     margin-top: 25px;
   }
-  .form .form-container form input[type="text"] {
+  .form .form-container form input[type="email"] {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     margin: 0;
   }
-  .form .form-container form input[type="text"]:focus {
+  .form .form-container form input[type="email"]:focus {
     -webkit-transform: scaleX(1.1);
             transform: scaleX(1.1);
     -webkit-box-shadow: 0 0 0 2px #1c2431, 0 0 0 4px #65e2d9;
