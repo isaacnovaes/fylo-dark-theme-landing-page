@@ -5,22 +5,24 @@ const form = document.querySelector("form"),
 form.addEventListener("submit", validateEmail);
 
 function validateEmail(event) {
-	event.preventDefault();
 	if (input.value.trim() === "") {
 		showError("Enter an email");
 		setTimeout(() => {
 			resetStyle();
 		}, 3000);
+		return false;
 	} else if (!input.value.trim().includes("@")) {
 		showError("Email is missing @");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
+		return false;
 	} else if (/(^@|@$)/.test(input.value.trim())) {
 		showError("Email cannot start or end with @");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
+		return false;
 	} else if (/(\.@|@\.)/g.test(input.value.trim())) {
 		showError("After or before @, there cannot be a dot");
 		setTimeout(() => {
@@ -29,13 +31,16 @@ function validateEmail(event) {
 	} else if (/(^\.|\.$)/.test(input.value.trim())) {
 		showError("Email cannot start or end with a dot");
 		setTimeout(() => {
+			return false;
 			resetStyle();
 		}, 4000);
+		return false;
 	} else if (/\.\./.test(input.value.trim())) {
 		showError("Email cannot have double dots");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
+		return false;
 	}
 }
 
