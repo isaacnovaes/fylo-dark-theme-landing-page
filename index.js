@@ -43,9 +43,7 @@ function validateEmail(event) {
 		}, 4000);
 		submitData = false;
 	}
-	if (submitData) {
-		form.setAttribute("netlify", "");
-	} else {
+	if (!submitData) {
 		event.preventDefault();
 	}
 }
