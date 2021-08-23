@@ -5,7 +5,6 @@ const form = document.querySelector("form"),
 form.addEventListener("submit", validateEmail);
 
 function validateEmail(event) {
-	const submitData = true;
 	// If  event.preventDefault() is used, the email won't be sent to the netlify to be handled
 	// Therefore, event.preventDefault() is used only when the email is invalid
 	if (input.value.trim() === "") {
@@ -13,39 +12,36 @@ function validateEmail(event) {
 		setTimeout(() => {
 			resetStyle();
 		}, 3000);
-		submitData = false;
+		event.preventDefault();
 	} else if (!input.value.trim().includes("@")) {
 		showError("Email is missing @");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
-		submitData = false;
+		event.preventDefault();
 	} else if (/(^@|@$)/.test(input.value.trim())) {
 		showError("Email cannot start or end with @");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
-		submitData = false;
+		event.preventDefault();
 	} else if (/(\.@|@\.)/g.test(input.value.trim())) {
 		showError("After or before @, there cannot be a dot");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
-		submitData = false;
+		event.preventDefault();
 	} else if (/(^\.|\.$)/.test(input.value.trim())) {
 		showError("Email cannot start or end with a dot");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
-		submitData = false;
+		event.preventDefault();
 	} else if (/\.\./.test(input.value.trim())) {
 		showError("Email cannot have double dots");
 		setTimeout(() => {
 			resetStyle();
 		}, 4000);
-		submitData = false;
-	}
-	if (!submitData) {
 		event.preventDefault();
 	}
 }
